@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+/* Changing font and background of all pages */
+.wrapper {
+  font-family: Lato;
+}
+
+#background {
+  background-image: url('./Images/Background.png');
+}
+
+
+
+/* ------ NAV BAR STYLING ------ */
+
+/* Adding margin space around Nav bar and centering text */
+.nav {
+  margin-bottom:20px;
+  text-align:center;
+}
+
+/* Creating horizontal flexbox for nav items */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width:70vw;
+  margin:auto;
+  height:5vh;
+  background-color: rgb(212, 212, 212);
+}
+
+/* Styling nav items and their hover effects */
+.navItem {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: rgb(179, 179, 179);
+  color:black;
+  width:100%;
+}
+
+.navItem:hover {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  color:black;
+  width:100%;
+}
+
+
+/* Styling div that holds page content and titles of all pages */
+.content {
+  width:60vw;
+  margin:auto;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  box-shadow: 2px 2px 20px;
+  margin-bottom:20px;
+  margin-top:30px;
+}
+
+
+
+/*Styling heading/title of all pages*/
+#title {
+  font-size: 6vw;
+  font-weight:100;
+  margin:0px;
+}
+
+/* ------ HOME PAGE STYLING ------ */
+
+/* Styling text for city/state and description about myself*/
+#city {
+ font-size: 25px;
+ margin:0px;
+}
+
+#description {
+  font-size: 20px;
+}
+
+/* Centering photo on Home page*/
+#SadieMain {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+
+
+/* ------ ABOUT PAGE STYLING ------ */
+.aboutSections {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top:40px;
+  text-align: start;
+  margin: 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Styling each columns title */
+.sectionTitle {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 23px;
+}
+
+/* ------ PROJECTS PAGE STYLING ------*/
+
+/* Creating 3 column grid to hold each project */
+.projects { 
+  margin-top:40px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+}
+
+/*Styling text and hover effect of project titles */
+.projectTitle {
+  color:rgb(90, 89, 89);
+}
+
+.projectTitle:hover {
+  color:black;
+  font-weight: bolder;
+}
+
+/* Giving space around project descriptions */
+.description {
+  margin: 20px;
+  text-align: start;
+}
+
+/* Styling text and hover effect of GitHub profile link */
+#gitHubLink {
+  color:gray
+}
+
+#gitHubLink:hover {
+  color:black;
+  font-weight:bold;
+}
+
+/* ------ WORK HISTORY STYLING ------ */
+
+/* Creating 2x2 grid to hold content */
+.workSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top:40px;
+  grid-column-gap: 20px;
+}
+
+/* Turning resume download section into vertical flex box, centering item */
+.downloadDiv {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+
+/* Adding hover effect for resume download image */
+#download:hover {
+  box-shadow: 2px 2px 10px black;
+}
+
+/* ------ STYLING CONTACT PAGE ------*/
+
+/* Creating vertical flex box for form content */
+.formContainer {
+  display:flex;
+  flex-direction: column;
+  width:50%;
+  margin:auto;
+}
+
+/* Making text area of form larger */
+#textArea {
+  height: 100px;
+}
+
+/* Creating grid for contact form and social media links */
+.contactContent {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Vertical flexbox for social media links */
+.socialSection {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Styling Thank You page after submitting contact form */
+#thankYouPage {
+  height:100vh;
+  overflow: hidden;
+}
+
+/* ------ FOOTER STYLING ------ */
+
+/* Styling/Layout of Footer */
+#footerMain {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(207, 207, 206);
+  height:120px
+}
+
+/* Creating vertical flexbox for footer page links*/
+.pageLinks {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+}
+
+/* Creating two x two grid for social media links/logos*/
+#socialLinks {
+  display:grid;
+  grid-template-columns: repeat(2, 20px);
+  grid-template-rows: repeat(2,20px);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+  
+}
+
+/* Creating flex box for Copy Write text - putting text at bottom of footer*/
+#copyWrite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactFooter {
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+}
