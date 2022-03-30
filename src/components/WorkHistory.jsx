@@ -1,8 +1,8 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
-import Resume from './Images/Resume.pdf'
-import ResumePic from './Images/ResumePic.png'
+import Resume from '../Images/Resume.pdf'
+import ResumePic from '../Images/ResumePic.png'
 
 export default function WorkHistory (){
 

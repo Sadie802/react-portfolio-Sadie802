@@ -1,49 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lato:wght@100&display=swap');
 
 /* Changing font and background of all pages */
 .wrapper {
   font-family: Lato;
 }
 
+
 #background {
-  background-image: url('./Images/Background.png');
+  background-color: rgb(31, 31, 31);
 }
 
 
 
 /* ------ NAV BAR STYLING ------ */
 
-/* Adding margin space around Nav bar and centering text */
 .nav {
-  margin-bottom:20px;
-  text-align:center;
-}
-
-/* Creating horizontal flexbox for nav items */
-nav {
-  display: flex;
-  justify-content: space-between;
-  width:70vw;
-  margin:auto;
-  height:5vh;
-  background-color: rgb(212, 212, 212);
+  position: relative;
 }
 
 /* Styling nav items and their hover effects */
 .navItem {
   text-decoration: none;
   font-size: 25px;
-  background-color: rgb(179, 179, 179);
-  color:black;
+  color:rgb(194, 194, 194);
   width:100%;
 }
 
 .navItem:hover {
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 25px;
-  background-color: rgb(255, 255, 255);
-  color:black;
+  color:rgb(194, 194, 194);
   width:100%;
 }
 
@@ -52,11 +40,10 @@ nav {
 .content {
   width:60vw;
   margin:auto;
-  background-color: rgb(255, 255, 255);
   text-align: center;
-  box-shadow: 2px 2px 20px;
   margin-bottom:20px;
   margin-top:30px;
+  color:rgb(226, 226, 226);
 }
 
 
@@ -121,11 +108,11 @@ nav {
 
 /*Styling text and hover effect of project titles */
 .projectTitle {
-  color:rgb(90, 89, 89);
+  color:rgb(219, 219, 219);
 }
 
 .projectTitle:hover {
-  color:black;
+  text-decoration: underline;
   font-weight: bolder;
 }
 
@@ -137,11 +124,11 @@ nav {
 
 /* Styling text and hover effect of GitHub profile link */
 #gitHubLink {
-  color:gray
+  color:whitesmoke
 }
 
 #gitHubLink:hover {
-  color:black;
+  text-decoration: underline;
   font-weight:bold;
 }
 
@@ -207,8 +194,9 @@ nav {
 #footerMain {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: rgb(207, 207, 206);
-  height:120px
+  background-color: rgb(46, 46, 46);
+  height:120px;
+  color:rgb(165, 165, 165);
 }
 
 /* Creating vertical flexbox for footer page links*/
@@ -243,4 +231,51 @@ nav {
   display:flex;
   flex-direction: column;
   justify-content: end;
+}
+
+/* ------ LANDING PAGE STYLING ------ */
+.landing {
+  background-color: rgb(31, 31, 31);
+  height:100vh;
+}
+
+/* Centering landing page content */
+.landingContainer {
+  color:rgb(165, 165, 165);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width:70%;
+  transform: translate(-50%, -50%);
+}
+
+/* Changing font type and size */ 
+#landingTitle {
+  font-size: 200px;
+  font-family: 'Hurricane', cursive;
+  text-align: center;
+}
+
+#landingSub {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Creating chevron pointing downwards */
+.chevron {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 2em;
+	left: 0.15em;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	width: 2em;
+  transform: rotate(135deg);
+  text-decoration: none;
+  color: rgb(99, 99, 99);
+  position: absolute;
+  top: 90%;
+  left: 48%;
 }

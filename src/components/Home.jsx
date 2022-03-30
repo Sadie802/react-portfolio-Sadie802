@@ -1,11 +1,10 @@
 import React from 'react'
-import SadieMain from './Images/SadieMain.JPG'
+import SadieMain from '../Images/SadieMain.JPG'
 import NavBar from './NavBar';
 import Footer from './Footer'
-import './App.css'
+import '../App.css'
 
 export default function Home (){
-
 
 
     return (

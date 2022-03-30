@@ -1,10 +1,10 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
-import GitHubLogo from './Images/GitHubLogo.png'
-import InstaLogo from './Images/InstaLogo.png'
-import LinkedInLogo from './Images/LinkedInLogo.png'
-import spotifyLogo from './Images/spotifyLogo.png'
+import GitHubLogo from '../Images/GitHubLogo.png'
+import InstaLogo from '../Images/InstaLogo.png'
+import LinkedInLogo from '../Images/LinkedInLogo.png'
+import spotifyLogo from '../Images/spotifyLogo.png'
 
 export default function Contact (){
 

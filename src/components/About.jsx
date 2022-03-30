@@ -3,14 +3,14 @@ import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './NavBar'
 import Footer from './Footer'
-import './App.css'
-import slideOne from './Images/slideOne.png'
-import slideTwo from './Images/slideTwo.jpeg'
-import slideThree from './Images/slideThree.png'
-import slideFour from './Images/slideFour.jpeg'
-import slideFive from './Images/slideFive.jpeg'
-import slideSix from './Images/slideSix.png'
-import slideSeven from './Images/slideSeven.JPG'
+import '../App.css'
+import slideOne from '../Images/slideOne.png'
+import slideTwo from '../Images/slideTwo.jpeg'
+import slideThree from '../Images/slideThree.png'
+import slideFour from '../Images/slideFour.jpeg'
+import slideFive from '../Images/slideFive.jpeg'
+import slideSix from '../Images/slideSix.png'
+import slideSeven from '../Images/slideSeven.JPG'
 
 export default function About (){
 

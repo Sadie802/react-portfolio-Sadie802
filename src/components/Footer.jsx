@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './App.css'
-import GitHubLogo from './Images/GitHubLogo.png'
-import InstaLogo from './Images/InstaLogo.png'
-import LinkedInLogo from './Images/LinkedInLogo.png'
-import spotifyLogo from './Images/spotifyLogo.png'
+import '../App.css'
+import GitHubLogo from '../Images/GitHubLogo.png'
+import InstaLogo from '../Images/InstaLogo.png'
+import LinkedInLogo from '../Images/LinkedInLogo.png'
+import spotifyLogo from '../Images/spotifyLogo.png'
 
 export default function Footer () {
     return (
-        <main className="wrapper" id='footerMain'>
+        <main id='footerMain'>
 
             {/* Contact information section of footer */}
             <div style={{textAlign:'center'}} className='contactFooter'>
@@ -40,11 +40,11 @@ export default function Footer () {
 
             {/* Links to other pages on site */}
             <div className='pageLinks'>
-                <Link to='/home'>Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/projects'>Projects</Link>
-                <Link to='/workhistory'>Work History</Link>
-                <Link to='/contact'>Contact</Link>      
+                <Link to='/home' style={{textDecoration:'none', color:'white'}}>Home</Link>
+                <Link to='/about' style={{textDecoration:'none', color:'white'}}>About</Link>
+                <Link to='/projects' style={{textDecoration:'none', color:'white'}}>Projects</Link>
+                <Link to='/workhistory' style={{textDecoration:'none', color:'white'}}>Work History</Link>
+                <Link to='/contact' style={{textDecoration:'none', color:'white'}}>Contact</Link>      
             </div>
         </main>
     )

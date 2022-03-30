@@ -1,10 +1,10 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
-import jeopardy from './Images/jeopardy.png'
-import GuessTheNumber from './Images/GuessTheNumber.png'
-import ZorkTwo from './Images/ZorkTwo.png'
-import GitHubLogo from './Images/GitHubLogo.png'
+import jeopardy from '../Images/jeopardy.png'
+import GuessTheNumber from '../Images/GuessTheNumber.png'
+import ZorkTwo from '../Images/ZorkTwo.png'
+import GitHubLogo from '../Images/GitHubLogo.png'
 
 export default function Projects (){
 

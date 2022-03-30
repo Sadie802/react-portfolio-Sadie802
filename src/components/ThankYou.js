@@ -1,6 +1,6 @@
 import React from 'react'
-import './App.css'
-import emailSent from './Images/emailSent.gif'
+import '../App.css'
+import emailSent from '../Images/emailSent.gif'
 
 export default function ThankYou(){
     return(
