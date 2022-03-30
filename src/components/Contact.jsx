@@ -37,7 +37,7 @@ export default function Contact (){
 
                         {/* getting rid of reCAPTCHA after submitting form, and sending user to a thank you for reaching out after form submit */}
                         <input type="hidden" name="_captcha" value="false"/>
-                        <input type="hidden" name="_next" value="http://localhost:3000/thankyou"></input>
+                        <input type="hidden" name="_next" value="./thankyou"></input>
 
                         <button type="submit">Send</button>
                         <br></br>
