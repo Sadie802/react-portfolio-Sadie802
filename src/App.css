@@ -18,6 +18,7 @@
 
 .nav {
   position: relative;
+  width:fit-content
 }
 
 /* Styling nav items and their hover effects */
@@ -42,7 +43,7 @@
   margin:auto;
   text-align: center;
   margin-bottom:20px;
-  margin-top:30px;
+  margin-top:0px;
   color:rgb(226, 226, 226);
 }
 

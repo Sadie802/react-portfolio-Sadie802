@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 import jeopardy from '../Images/jeopardy.png'
 import GuessTheNumber from '../Images/GuessTheNumber.png'
-import ZorkTwo from '../Images/ZorkTwo.png'
+import ReactChat from '../Images/ReactChat.png'
 import GitHubLogo from '../Images/GitHubLogo.png'
 
 export default function Projects (){
@@ -40,13 +40,13 @@ export default function Projects (){
 
                     {/* Title, photo, and description of Zorkington project */}
                     <section>
-                        <a href='https://github.com/Sadie802/zorkington-Sadie802' target='_blank' style={{textDecoration:'none'}}>
-                            <h4 className='projectTitle'>Zorkington</h4>
+                        <a href='https://github.com/burlingtoncodeacademy-students/react-chat-sadie-dave' target='_blank' style={{textDecoration:'none'}}>
+                            <h4 className='projectTitle'>React Chat</h4>
                         </a>
-                        <a href='https://github.com/Sadie802/zorkington-Sadie802' target='_blank'> 
-                            <img src={ZorkTwo} alt='photo of zorkington projects code' height='auto' width='100%'/>
+                        <a href='https://github.com/burlingtoncodeacademy-students/react-chat-sadie-dave' target='_blank'> 
+                            <img src={ReactChat} alt='photo of react chat webpage' height='auto' width='100%'/>
                         </a>
-                        <p className='description'>This project is a spin-off of the text adventure game Zork. Zorkington takes place in my home state and town, Burlington, Vermont. It is a game written in JavaScript that allows the player to make moves (change rooms, pick up items, read items, etc). Based on the player's input, my Zorkington game would adjust it's course of action accordingly.</p>
+                        <p className='description'>This project is an online chatroom created with a React front end (using dynamically rendered components), an Express server, and utilizes MongoDB/Mongoose. It allows a user to select any chat room and beginning messaging, with messages appearing in "live time" (directly after being sent).</p>
                     </section>
                 </div>
 
