@@ -22,8 +22,7 @@ export default function Home (){
 
                     {/* Short description of myself */}
                     <div id='description'>
-                        <p>Current student in a Web Development Bootcamp.</p>
-                        <p>I have a passion and desire to build and design web applications for companies who support their local community, and are looking to make a positive impact on the world around them. </p>    
+                        <p>Dedicated Web/Software Developer with full-stack knowledge committed to problem solving and creating solutions in the least amount of time while maintaining thoroughness and thoughtfulness.  Driven individual looking to bring my skills, knowledge, and enthusiasm for software development to a strong organization that values employee growth, continual learning, and professional advancement.</p>    
                     </div>
                 </div>
 

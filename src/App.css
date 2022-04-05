@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Hurricane&family=Lato:wght@100&display=swap');
 
 /* Changing font and background of all pages */
 .wrapper {
@@ -9,7 +10,7 @@
 
 
 #background {
-  background-color: rgb(31, 31, 31);
+  background-color:#747572
 }
 
 
@@ -39,12 +40,12 @@
 
 /* Styling div that holds page content and titles of all pages */
 .content {
-  width:60vw;
+  width:75vw;
   margin:auto;
   text-align: center;
   margin-bottom:20px;
   margin-top:0px;
-  color:rgb(226, 226, 226);
+  color:#E5EBEA
 }
 
 
@@ -76,13 +77,11 @@
   margin-bottom: 40px;
 }
 
-
-
 /* ------ ABOUT PAGE STYLING ------ */
 .aboutSections {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 30px;
   margin-top:40px;
   text-align: start;
   margin: 15px;
@@ -135,6 +134,31 @@
 
 /* ------ WORK HISTORY STYLING ------ */
 
+.workContainer {
+  background-image: url('./Images/paper.png');
+  background-size: cover;
+  height:100vh;
+  background-position: center;
+}
+
+.sub {
+  font-family: 'Grape Nuts', cursive;
+  text-decoration: underline;
+}
+
+.listItems {
+  font-family: 'Grape Nuts', cursive;
+  font-size: larger;
+}
+
+.hmm {
+  color:black;
+  width:fit-content;
+  text-align: start;
+  margin: auto;
+  padding-top:110px
+}
+
 /* Creating 2x2 grid to hold content */
 .workSection {
   display: grid;
@@ -143,11 +167,12 @@
   grid-column-gap: 20px;
 }
 
+
 /* Turning resume download section into vertical flex box, centering item */
 .downloadDiv {
   display:flex;
   flex-direction: column;
-  justify-content: center;;
+  justify-content: center;
 }
 
 /* Adding hover effect for resume download image */
@@ -161,7 +186,7 @@
 .formContainer {
   display:flex;
   flex-direction: column;
-  width:50%;
+  width:80%;
   margin:auto;
 }
 
@@ -195,9 +220,9 @@
 #footerMain {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: rgb(46, 46, 46);
+  background-color: #45503b87;
   height:120px;
-  color:rgb(165, 165, 165);
+  color:rgba(165, 165, 165, 0.638);
 }
 
 /* Creating vertical flexbox for footer page links*/

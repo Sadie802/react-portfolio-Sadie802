@@ -9,7 +9,7 @@ import spotifyLogo from '../Images/spotifyLogo.png'
 export default function Contact (){
 
     return (
-        <main className='wrapper'>
+        <main className='wrapper' style={{height:'100vh'}}>
             {/* Adding nav bar to page */}
         <NavBar />
         <div className='content' style={{width:'70vw'}}>
@@ -19,28 +19,29 @@ export default function Contact (){
             {/* Creating a contact form to email me */}
                 <div className='contactContent'>
                     <form  className='formContainer' action="https://formsubmit.co/sadie.southworth@gmail.com" method="POST" target='_blank'>
+                      
                         <label htmlFor='firstName'>First Name</label>
                         <input name='firstName' type='text' placeholder='First name..' required/>
-                        <br></br>
-
+                    
                         <label htmlFor='lastName'>Last Name</label>
                         <input name='lastName' type='text' placeholder='Last name..' required />
-                        <br></br>
+                       
+                        
 
                         <label htmlFor='email'>Your Email</label>
-                        <input name='email' type='text' placeholder='Your email..' required/>
-                        <br></br>
+                        <input className='email' name='email' type='text' placeholder='Your email..' required/>
+                       
 
                         <label htmlFor='input'>Your Message</label>
                         <textarea id='textArea' name='input' type='text' placeholder='Type your message..' />
-                        <br></br>
+                     
 
                         {/* getting rid of reCAPTCHA after submitting form, and sending user to a thank you for reaching out after form submit */}
                         <input type="hidden" name="_captcha" value="false"/>
                         <input type="hidden" name="_next" value="https://react-portfolio-sadie802.vercel.app/thankyou"></input>
 
-                        <button type="submit">Send</button>
-                        <br></br>
+                        <button id='sendBtn' type="submit">Send</button>
+                       
                     </form>
                     
                {/* Social media links as clickable logos */}

@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import { Nav, NavItem, Navbar, NavbarToggler, Collapse } from 'reactstrap'
 
 export default function NavBar(){
-   
+
     const [isOpen, setIsOpen] = useState(false)
 
 
@@ -21,7 +21,7 @@ export default function NavBar(){
                             <NavItem>
                                 <NavLink style={({isActive}) => ({
                                     textDecoration: isActive ? 'underline' : 'undefined'})}
-                                    className='navItem' to="/home"> Home
+                                    className='navItem' to='/home'> Home
                                 </NavLink>
                             </NavItem>
                             <NavItem>

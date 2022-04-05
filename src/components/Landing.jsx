@@ -1,5 +1,11 @@
 import React, {useState} from 'react'
 import '../App.css'
+import Home from './Home'
+import About from './About'
+import Projects from './Projects'
+import WorkHistory from './WorkHistory'
+import Contact from './Contact'
+import Footer from './Footer'
 
 export default function Landing () {
 
@@ -46,14 +52,20 @@ export default function Landing () {
 
 
     return (
+      <>
         <main className='landing'>
-            <section className='slider'>
+            <section>
                 <div className='landingContainer'>
                     <h1 id='landingTitle'>Sadie Southworth</h1>
                     <h2 id='landingSub' style={{color:color}}>{description}</h2>
                 </div>
-                <a href='./Home'><span className='chevron'></span></a>
+                <a href='#home'><span className='chevron'></span></a>
             </section>
         </main>
+
+        <div id='home'>
+          <Home />
+        </div>
+        </>
     )
 }
