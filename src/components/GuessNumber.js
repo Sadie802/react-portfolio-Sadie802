@@ -5,7 +5,7 @@ import Logo from "../Images/Logo.jpg";
 export default function GuessNumber() {
   return (
     <div>
-      <a href="/home">
+      <a href="/">
         <img id="logo" src={Logo} width="70rem" />
       </a>
       <h1 id="adminTitle">Guess The Number</h1>
@@ -28,8 +28,8 @@ export default function GuessNumber() {
           </li>
         </ul>
       </div>
-      <div style={{ width: "80%", margin: "auto" }}>
-        <img src={GuessPic} width="100%" />
+      <div style={{ width: "60%", margin: "auto" }}>
+        <img src={GuessPic} width='100%'/>
       </div>
       <h3 className="probAndSol">Problems I Encountered</h3>
       <p className="moreInfo">

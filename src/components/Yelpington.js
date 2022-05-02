@@ -5,7 +5,7 @@ import Logo from "../Images/Logo.jpg";
 export default function Yelpington() {
   return (
     <div>
-      <a href="/home">
+      <a href="/">
         <img id="logo" src={Logo} width="70rem" />
       </a>
       <h1 id="adminTitle">Yelpington</h1>

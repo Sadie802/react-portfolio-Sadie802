@@ -49,12 +49,12 @@ export default function Home() {
       </div>
       <section id="aboutBlurb">
         <p>
-          Dedicated Web/Software Developer with full-stack knowledge committed
+          I am a dedicated Web/Software Developer with full-stack knowledge committed
           to problem solving and creating solutions in the least amount of time
           while maintaining thoroughness and thoughtfulness.
         </p>
         <p>
-          Driven individual looking to bring my skills, knowledge, and
+          A driven individual looking to bring my skills, knowledge, and
           enthusiasm for software development to a strong organization that
           values employee growth, continual learning, and professional
           advancement.
