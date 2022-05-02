@@ -10,7 +10,7 @@ export default function Projects() {
       <div>
         <h1 id="projectTitle">My Projects</h1>
         <div className="projects">
-          <section>
+          <section className='projectSection'>
             <a href="/AdminPortal">
               <img className="projectImg" src={AdminPhoto} width="90%" />
             </a>
@@ -22,7 +22,7 @@ export default function Projects() {
               View Project &rsaquo;
             </a>
           </section>
-          <section>
+          <section className='projectSection'>
             <a href="/Yelpington">
               <img className="projectImg" src={yelpington} width="90%" />
             </a>
@@ -34,7 +34,7 @@ export default function Projects() {
               View Project &rsaquo;
             </a>
           </section>
-          <section>
+          <section className='projectSection'>
             <a href="/ReactChat">
               <img
                 className="projectImg"
@@ -51,7 +51,7 @@ export default function Projects() {
               View Project &rsaquo;
             </a>
           </section>
-          <section>
+          <section className='projectSection'>
             <a href="/GuessTheNumber">
               <img
                 className="projectImg"
