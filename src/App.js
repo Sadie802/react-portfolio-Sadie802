@@ -12,7 +12,7 @@ function App() {
   return (
     <div id='background'>
       <Routes> 
-        <Route path="/home" element ={<Home />}/>
+        <Route path="/" element ={<Home />}/>
         <Route path="/AdminPortal" element={<AdminPortal/>}/>
         <Route path="/GuessTheNumber" element={<GuessNumber/>}/>
         <Route path="/ReactChat" element={<ReactChat/>}/>
