@@ -17,9 +17,9 @@ export default function About() {
     <main>
       <section id='readMore'>
       <h4 id="aboutTitle"> Want To Read More About Me?</h4>
-      <label class="switch">
+      <label className="switch">
         <input type="checkbox" onClick={buttonClick} />
-        <span class="slider"></span>
+        <span className="slider"></span>
       </label>
       </section>
       {clicked ? (
