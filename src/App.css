@@ -200,6 +200,10 @@ input:checked + .slider:before {
   .projectSection{
     margin-bottom: 20px;
   }
+
+  #projectTitle{
+    width:fit-content
+  }
 }
 
 .projectName{
