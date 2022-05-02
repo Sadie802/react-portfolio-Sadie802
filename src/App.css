@@ -1,307 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lato:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Hurricane&family=Lato:wght@100&display=swap');
-
-/* Changing font and background of all pages */
-.wrapper {
-  font-family: Lato;
+/*----------HOME STYLING-----------*/
+#logo{
+  margin: 40px;
 }
 
-
-#background {
-  background-color:#747572
+#title{
+  width:50%;
+  margin:70px 150px;
+  color:rgb(74, 74, 74)
 }
 
-
-
-/* ------ NAV BAR STYLING ------ */
-
-.nav {
-  position: relative;
-  width:fit-content
-}
-
-/* Styling nav items and their hover effects */
-.navItem {
-  text-decoration: none;
-  font-size: 25px;
-  color:rgb(194, 194, 194);
-  width:100%;
-}
-
-.navItem:hover {
-  text-decoration: underline;
-  font-size: 25px;
-  color:rgb(194, 194, 194);
-  width:100%;
-}
-
-
-/* Styling div that holds page content and titles of all pages */
-.content {
-  width:75vw;
-  margin:auto;
-  text-align: center;
-  margin-bottom:20px;
-  margin-top:0px;
-  color:#E5EBEA
-}
-
-
-
-/*Styling heading/title of all pages*/
-#title {
-  font-size: 6vw;
-  font-weight:100;
-  margin:0px;
-}
-
-/* ------ HOME PAGE STYLING ------ */
-
-/* Styling text for city/state and description about myself*/
-#city {
- font-size: 25px;
- margin:0px;
-}
-
-#description {
-  font-size: 20px;
-}
-
-/* Centering photo on Home page*/
-#SadieMain {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-}
-
-/* ------ ABOUT PAGE STYLING ------ */
-.aboutSections {
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  margin-top:40px;
-  text-align: start;
-  margin: 15px;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-/* Styling each columns title */
-.sectionTitle {
-  text-align: center;
-  font-weight: bolder;
-  font-size: 23px;
-}
-
-/* ------ PROJECTS PAGE STYLING ------*/
-
-/* Creating 3 column grid to hold each project */
-.projects { 
-  margin-top:40px;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 15px;
-}
-
-/*Styling text and hover effect of project titles */
-.projectTitle {
-  color:rgb(219, 219, 219);
-}
-
-.projectTitle:hover {
-  text-decoration: underline;
-  font-weight: bolder;
-}
-
-/* Giving space around project descriptions */
-.description {
-  margin: 20px;
-  text-align: start;
-}
-
-/* Styling text and hover effect of GitHub profile link */
-#gitHubLink {
-  color:whitesmoke
-}
-
-#gitHubLink:hover {
-  text-decoration: underline;
-  font-weight:bold;
-}
-
-/* ------ WORK HISTORY STYLING ------ */
-
-.workContainer {
-  background-image: url('./Images/paper.png');
-  background-size: cover;
-  height:100vh;
-  background-position: center;
-}
-
-.sub {
-  font-family: 'Grape Nuts', cursive;
-  text-decoration: underline;
-}
-
-.listItems {
-  font-family: 'Grape Nuts', cursive;
-  font-size: larger;
-}
-
-.hmm {
-  color:black;
-  width:fit-content;
-  text-align: start;
+#homeImg{
+  width:80%;
   margin: auto;
-  padding-top:110px
 }
 
-/* Creating 2x2 grid to hold content */
-.workSection {
+#aboutBlurb{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top:40px;
-  grid-column-gap: 20px;
-}
-
-
-/* Turning resume download section into vertical flex box, centering item */
-.downloadDiv {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Adding hover effect for resume download image */
-#download:hover {
-  box-shadow: 2px 2px 10px black;
-}
-
-/* ------ STYLING CONTACT PAGE ------*/
-
-/* Creating vertical flex box for form content */
-.formContainer {
-  display:flex;
-  flex-direction: column;
   width:80%;
-  margin:auto;
+  margin: auto;
+  margin-top:30px;
+  font-size: 1.2rem;
 }
 
-/* Making text area of form larger */
-#textArea {
-  height: 100px;
+.socialSectionHome{
+  margin: 40px;
+  display: inline;
+  float: right;
 }
 
-/* Creating grid for contact form and social media links */
-.contactContent {
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
+.socialImg{
+  margin:5px;
 }
 
-/* Vertical flexbox for social media links */
-.socialSection {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
+/*------END HOME STYLING------------*/
+
+/*------ABOUT PAGE STYLING------*/
+#aboutTitle{
+  text-align: center;
 }
 
-/* Styling Thank You page after submitting contact form */
-#thankYouPage {
-  height:100vh;
-  overflow: hidden;
+#readBtn{
+  color:red
 }
 
-/* ------ FOOTER STYLING ------ */
-
-/* Styling/Layout of Footer */
-#footerMain {
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: #45503b87;
-  height:120px;
-  color:rgba(165, 165, 165, 0.638);
-}
-
-/* Creating vertical flexbox for footer page links*/
-.pageLinks {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 15px;
-}
-
-/* Creating two x two grid for social media links/logos*/
-#socialLinks {
-  display:grid;
-  grid-template-columns: repeat(2, 20px);
-  grid-template-rows: repeat(2,20px);
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  grid-gap: 10px;
-  grid-row-gap: 10px;
-  
-}
-
-/* Creating flex box for Copy Write text - putting text at bottom of footer*/
-#copyWrite {
+#readMore{
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-.contactFooter {
-  display:flex;
-  flex-direction: column;
-  justify-content: end;
+.aboutSections{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding: 20px;
+  margin:30px;
+  background-color: rgba(194, 194, 194, 0.433);
+  font-size: 1.1rem;
 }
 
-/* ------ LANDING PAGE STYLING ------ */
-.landing {
-  background-color: rgb(31, 31, 31);
-  height:100vh;
+.sectionTitle{
+  text-align: center;
 }
 
-/* Centering landing page content */
-.landingContainer {
-  color:rgb(165, 165, 165);
+/*-----SWITCH STYLING ON ABOUT PAGE-----*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-left:10px;
+}
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.slider {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  width:70%;
-  transform: translate(-50%, -50%);
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.4s;
+  border-radius: 34px;
+ box-shadow: -1px 1px 6px 0px rgb(0 0 0 / 68%);
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background:#656464e8;
+  left: 6px;
+  bottom: 5px;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.42, 0, 0, 1.68);
+}
+input:checked + .slider {
+  background-color: #2db23f;
 }
 
-/* Changing font type and size */ 
-#landingTitle {
-  font-size: 200px;
-  font-family: 'Hurricane', cursive;
-  text-align: center;
+input:checked + .slider:before {
+  transform: translateX(30px);
+  background:rgb(255, 255, 255);
+}
+/*------END SWITCH AND ABOUT PAGE STYLING-------*/
+
+/*-----WORK/SKILLS PAGE STYLING------*/
+.workTitle{
+  margin:90px 150px 30px;
 }
 
-#landingSub {
-  text-align: center;
-  font-size: 25px;
+.listItems{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width:80%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 70px;
 }
 
-/* Creating chevron pointing downwards */
-.chevron {
-	border-style: solid;
-	border-width: 0.25em 0.25em 0 0;
-	content: '';
-	display: inline-block;
-	height: 2em;
-	left: 0.15em;
-	top: 0.15em;
-	transform: rotate(-45deg);
-	width: 2em;
-  transform: rotate(135deg);
+.listDec{
+  color:orange;
+  font-weight: bold;
+}
+
+#download{
   text-decoration: none;
-  color: rgb(99, 99, 99);
-  position: absolute;
-  top: 90%;
-  left: 48%;
+  color:rgb(75, 75, 75);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
+
+#download:hover{
+  text-decoration: underline;
+  color:black;
+}
+/*------END WORK/SKILLS STYLING-----*/
+
+/*----PROJECTS STYLING---*/
+#projectTitle{
+    margin:90px 150px 30px;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:100px;
+  width:80%;
+  margin: auto;
+}
+
+.projectName{
+  margin-top:20px;
+}
+
+.projectLink{
+  text-decoration: none;
+  color:rgb(74, 74, 74);
+  font-weight: bold;
+}
+
+.projectLink:Hover{
+  text-decoration: underline;
+  color:black;
+}
+
+.projectImg{
+  transition: all .2s ease-in-out;
+}
+
+.projectImg:hover{
+  width:100%;
+  transform: scale(1);
+}
+
+/*---END PROJECTS STLYING---*/
+
+/*----EACH PROJECT COMPONENT STYLING---*/
+
+#adminTitle{
+  margin:10px 150px 30px;
+}
+
+#adminDescription{
+  width:50%;
+  margin:30px 150px 30px;
+}
+
+.linkedInLink{
+  text-decoration: none;
+  color:rgb(154, 78, 78);
+  font-weight: bold;
+}
+
+.linkedInLink:hover{
+  text-decoration: underline;
+  color: rgb(154, 78, 78);
+}
+
+#hyhQuote{
+  width:50%;
+  margin: auto;
+  color: rgb(115, 115, 115);
+}
+
+#stack{
+  margin:40px 150px 30px;
+}
+
+#stackList{
+  margin:0px 150px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width:30%;
+  line-height: 35px;
+}
+
+.probAndSol{
+  margin:40px 150px 30px;
+}
+
+.moreInfo{
+  margin:40px 250px 30px;
+  width:50%;
+  font-size: 1.2rem;
+  color:rgb(78, 78, 78)
+}
+
+#footNotes{
+  display: flex;
+  justify-content: space-evenly;
+  margin:60px 250px 30px;
+}
+
+/*---END PROJECT COMPONENT STYLING---*/
+
+/*---CONTACT STYLING---*/
+
+.socialSection{
+  display: flex;
+  justify-content: space-evenly;
+  margin:80px 250px 30px;
+}
+
+#email{
+  text-decoration: none;
+  color:black
+}
+
+/*---END CONTACT STYLING---*/

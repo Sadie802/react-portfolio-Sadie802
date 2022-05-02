@@ -2,10 +2,7 @@ import React, {useState} from 'react'
 import '../App.css'
 import Home from './Home'
 import About from './About'
-import Projects from './Projects'
-import WorkHistory from './WorkHistory'
-import Contact from './Contact'
-import Footer from './Footer'
+
 
 export default function Landing () {
 
@@ -65,6 +62,9 @@ export default function Landing () {
 
         <div id='home'>
           <Home />
+        </div>
+        <div>
+          <About />
         </div>
         </>
     )
