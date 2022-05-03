@@ -13,6 +13,7 @@ import spotifyLogo from "../Images/spotifyLogo.png";
 import email from "../Images/email.png"
 
 export default function Home() {
+  
   return (
     <main>
         <section className="socialSectionHome">

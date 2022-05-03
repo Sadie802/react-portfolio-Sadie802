@@ -8,7 +8,7 @@ export default function WorkHistory() {
       <h1 className="workTitle">Skills</h1>
       <ul className="listItems">
         <li>
-          <span className="listDec">| </span>JavaScrip
+          <span className="listDec">| </span>JavaScript
         </li>
         <li>
           <span className="listDec">| </span>React
