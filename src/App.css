@@ -1,38 +1,352 @@
-.App {
+#background{
+  background-color: white;
+}
+
+/*----------HOME STYLING-----------*/
+#logo{
+  margin: 40px;
+}
+
+#title{
+  width:50%;
+  margin:70px 150px;
+  color:rgb(74, 74, 74)
+}
+
+@media only screen and (max-width: 600px){
+	#title{
+    width: 80%;
+    margin-left:50px
+  }
+
+  #aboutBlurb{
+    display: flex !important; 
+    flex-direction: column !important;
+  }
+
+  #logo{
+    margin:10px;
+  }
+}
+
+#homeImg{
+  width:80%;
+  margin: auto;
+}
+
+#aboutBlurb{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:30px;
+  width:80%;
+  margin: auto;
+  margin-top:30px;
+  font-size: 1.2rem;
+}
+
+.socialSectionHome{
+  margin: 40px;
+  display: inline;
+  float: right;
+}
+
+.socialImg{
+  margin:5px;
+}
+
+/*------END HOME STYLING------------*/
+
+/*------ABOUT PAGE STYLING------*/
+#aboutTitle{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#readBtn{
+  color:red
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#readMore{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top:50px;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutSections{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding: 20px;
+  margin:30px;
+  background-color: rgba(194, 194, 194, 0.433);
+  font-size: 1.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px){
+	.aboutSections{
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+
+.sectionTitle{
+  text-align: center;
+}
+
+/*-----SWITCH STYLING ON ABOUT PAGE-----*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-left:10px;
+}
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.4s;
+  border-radius: 34px;
+ box-shadow: -1px 1px 6px 0px rgb(0 0 0 / 68%);
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background:#656464e8;
+  left: 6px;
+  bottom: 5px;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.42, 0, 0, 1.68);
+}
+input:checked + .slider {
+  background-color: #2db23f;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+  background:rgb(255, 255, 255);
+}
+/*------END SWITCH AND ABOUT PAGE STYLING-------*/
+
+/*-----WORK/SKILLS PAGE STYLING------*/
+.workTitle{
+  margin:90px 150px 30px;
+}
+
+.listItems{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width:80%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 70px;
+}
+
+@media only screen and (max-width: 600px){
+	.listItems{
+    display: flex;
+    flex-direction: column;
   }
 }
+
+.listDec{
+  color:orange;
+  font-weight: bold;
+}
+
+#download{
+  text-decoration: none;
+  color:rgb(75, 75, 75);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#download:hover{
+  text-decoration: underline;
+  color:black;
+}
+/*------END WORK/SKILLS STYLING-----*/
+
+/*----PROJECTS STYLING---*/
+#projectTitle{
+    margin:90px 150px 30px;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:100px;
+  width:80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px){
+	.projects{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectSection{
+    margin-bottom: 20px;
+  }
+
+  #projectTitle{
+    width:fit-content
+  }
+}
+
+.projectName{
+  margin-top:20px;
+}
+
+.projectLink{
+  text-decoration: none;
+  color:rgb(74, 74, 74);
+  font-weight: bold;
+}
+
+.projectLink:Hover{
+  text-decoration: underline;
+  color:black;
+}
+
+.projectImg{
+  transition: all .2s ease-in-out;
+}
+
+.projectImg:hover{
+  width:100%;
+  transform: scale(1);
+}
+
+
+/*---END PROJECTS STLYING---*/
+
+/*----EACH PROJECT COMPONENT STYLING---*/
+
+#adminTitle{
+  margin:10px 150px 30px;
+}
+
+#adminDescription{
+  width:50%;
+  margin:30px 150px 30px;
+}
+
+.linkedInLink{
+  text-decoration: none;
+  color:rgb(154, 78, 78);
+  font-weight: bold;
+}
+
+.linkedInLink:hover{
+  text-decoration: underline;
+  color: rgb(154, 78, 78);
+}
+
+#hyhQuote{
+  width:50%;
+  margin: auto;
+  color: rgb(115, 115, 115);
+}
+
+#stack{
+  margin:40px 150px 30px;
+}
+
+#stackList{
+  margin:0px 150px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width:30%;
+  line-height: 35px;
+}
+
+.probAndSol{
+  margin:40px 150px 30px;
+}
+
+.moreInfo{
+  margin:40px 250px 30px;
+  width:50%;
+  font-size: 1.2rem;
+  color:rgb(78, 78, 78)
+}
+
+#footNotes{
+  display: flex;
+  justify-content: space-evenly;
+  margin:60px 250px 30px;
+}
+
+@media only screen and (max-width: 600px){
+	#adminTitle, #adminDescription, .moreInfo{
+    margin:40px;
+    width:fit-content;
+  }
+
+  #hyhQuote{
+    margin:60px;
+    width: fit-content;
+  }
+
+  #stackList{
+    margin:50px;
+    margin-top:0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:30px;
+    width: fit-content;
+  }
+
+  #stack , .probAndSol, #footNotes{
+    margin:40px;
+  }
+
+}
+
+/*---END PROJECT COMPONENT STYLING---*/
+
+/*---CONTACT STYLING---*/
+
+.socialSection{
+  display: flex;
+  justify-content: space-evenly;
+  margin:80px 250px 30px;
+}
+
+@media only screen and (max-width: 600px){
+	.socialSection{
+    display: flex;
+    width: fit-content;
+    margin:auto;
+    margin-bottom:25px;
+  }
+
+  .socialLogo{
+    height:30px;
+    margin:10px;
+  }
+}
+
+#email{
+  text-decoration: none;
+  color:black
+}
+
+/*---END CONTACT STYLING---*/

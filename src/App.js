@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react'
+import { Routes, Route} from "react-router-dom";
 import './App.css';
+import Home from './components/Home'
+import AdminPortal from './components/AdminPortal';
+import GuessNumber from './components/GuessNumber';
+import ReactChat from './components/ReactChat';
+import Yelpington from './components/Yelpington';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='background'>
+      <Routes> 
+        <Route path="/" element ={<Home />}/>
+        <Route path="/AdminPortal" element={<AdminPortal/>}/>
+        <Route path="/GuessTheNumber" element={<GuessNumber/>}/>
+        <Route path="/ReactChat" element={<ReactChat/>}/>
+        <Route path="/Yelpington" element={<Yelpington/>}/>
+      </Routes>
     </div>
+
   );
 }
 
