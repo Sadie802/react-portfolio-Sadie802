@@ -94,14 +94,14 @@ export default function AdminPortal() {
       </p>
       <div id="footNotes">
         <a
-          href="https://github.com/jeff-priest/hearts-you-hold-capstone"
+          href="https://hyh-client.herokuapp.com/"
           target="_blank"
           style={{ color: "rgb(78, 78, 78)" }}
         >
           <h5>View the public website</h5>
         </a>
         <a
-          href="https://github.com/Sadie802?tab=repositories"
+          href="https://github.com/Hearts-You-Hold"
           target="_blank"
           style={{ color: "rgb(78, 78, 78)" }}
         >
